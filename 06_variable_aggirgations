@@ -6,6 +6,6 @@ apple=$1
 orange=$2
 mango=$3
 
-total_Fruits=$(($apple+$orange+$mango))
+total_Fruits=$(($1+$2+$3))
 
 echo "total fruits amount is : $total_Fruits
