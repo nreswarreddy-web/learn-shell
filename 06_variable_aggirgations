@@ -8,4 +8,4 @@ mango=$3
 
 total_Fruits=$((apple + orange + mango))
 
-echo "total fruits amount is : $total_Fruits
+echo "total fruits amount is : $total_Fruits"
