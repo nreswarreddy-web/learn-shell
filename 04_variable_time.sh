@@ -1,12 +1,12 @@
 #!/bin/bash
 
 Start_time =$(date +%s)
-echo "Script start time at :Start_time "
+echo "Script start time at :$Start_time "
 
 sleep 10
 
 end_time =$(date +%s)
-echo "Script end time at :end_time"
+echo "Script end time at :$end_time"
 
 tota_time = $( $end_time - $Start_time)
 
