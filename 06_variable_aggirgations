@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo " can u pleae fil the below details"
+
+apple=$1
+orange=$2
+mango=$3
+
+total_Fruits=$(($apple+$orange+$mango))
+
+echo "total fruits amount is : $total_Fruits
