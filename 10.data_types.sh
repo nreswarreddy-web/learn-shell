@@ -18,6 +18,6 @@ echo "first fruit:${fruits[1]}"
 
 echo "all fruits:${fruits[@]}"
 
-name =Reddi Eswar Prasad
+name="Reddi Eswar Prasad"
 
 eco "${name}N"
