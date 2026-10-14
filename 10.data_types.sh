@@ -11,3 +11,7 @@ declare -i count=10
 count=count+25
 
 echo "total count is"$count
+
+fruits=("apple", "orange" ,"kiwi")
+
+echo "i love only this fruits:$fruits[1]
