@@ -1,4 +1,5 @@
 #!/bin/bash
-export "$COURSE"
-export "$DUARATION"
-export "$TRAINER"
+
+echo $COURSE
+echo $DURATION
+echo $TRAINER
