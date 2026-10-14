@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$course"
+echo "$COURSE"
