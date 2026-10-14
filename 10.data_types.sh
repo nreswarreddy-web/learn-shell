@@ -20,4 +20,4 @@ echo "all fruits:${fruits[@]}"
 
 name="Reddi Eswar Prasad"
 
-echo "${name} N"
+echo "N ${name} "
