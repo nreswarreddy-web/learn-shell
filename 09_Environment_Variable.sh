@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "$COURSE"
+export COURSE="aws"
+export DUARATION="10 hrs"
+export TRAINER="siva"
