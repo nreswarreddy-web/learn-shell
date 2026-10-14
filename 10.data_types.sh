@@ -14,4 +14,6 @@ echo "total count is"$count
 
 fruits=("apple", "orange" ,"kiwi")
 
-echo "i love only this fruits:$fruits[1]"
+echo "first fruit:${fruits[1]}"
+
+echo "all fruits:${fruits[@]}"
