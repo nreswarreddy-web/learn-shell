@@ -10,7 +10,7 @@ if  [ $user_id -ne 0 ]; then
 
  mkdir -p $logs_folder
 
- echo "scipt started executing at $(date +"%F %T")"
+ echo "scipt started executing at $(date +"%F %T")"  &>> $logs_file
 
 validate(){
    if [ $1 -ne 0 ]; then 
@@ -24,12 +24,13 @@ validate(){
    fi
 }
  
- echo " processing ...."
-
- dnf install mysql -y 
+ dnf install nginx -y &>> $logs_file
  validate $? "installation is done"
 
- echo "scipt execution completed $(date +"%F %T")"
+ dnf install mysql -y &>> $logs_file
+ validate $? "installation is done"
+
+ echo "scipt execution completed $(date +"%F %T")"  &>> $logs_file
 
 
 
