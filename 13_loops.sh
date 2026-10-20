@@ -24,7 +24,7 @@ validate(){
    fi
 }
 
-for package $@
+for package in $@
 do 
   echo "going to install: ${package}"
 done 
