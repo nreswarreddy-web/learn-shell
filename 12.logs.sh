@@ -25,10 +25,10 @@ validate(){
 }
  
  dnf install nginx -y &>> $logs_file
- validate $? "installation is done"
+ validate $? "nginx installation is done"
 
  dnf install mysql -y &>> $logs_file
- validate $? "installation is done"
+ validate $? "mysql installation is done"
 
  echo "scipt execution completed $(date +"%F %T")"  &>> $logs_file
 
