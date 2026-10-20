@@ -27,4 +27,6 @@ validate(){
 for package in $@
 do 
   echo "going to install: ${package}"
+  dnf install ${package} -y &>> $logs_file
+  validate $? "installing ${package}"
 done 
