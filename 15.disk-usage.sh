@@ -16,3 +16,5 @@ do
 
   fi
 done  <<< "$disk_usage"
+
+echo -e "$message"
