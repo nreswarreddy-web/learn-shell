@@ -8,7 +8,7 @@ do
   usage=$(echo $line | awk '{print $6}' | cut -d "%" -f1)
   partitons=$(echo $line | awk '{print $7}')
 
-  if ["$usage" -ge "$useage_thersold"]; then
+  if [ "$usage" -ge "$useage_thersold" ]; then
    message+="High desk usage of $partitons: $usage \n"
 
    #\n - new line 
