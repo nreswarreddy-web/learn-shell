@@ -11,7 +11,7 @@ do
 
   #if [ "$usage" -ge "$useage_thersold" ]; then
   if [ "$usage" -ge "$usage_threshold" ]; then
-   message+="High desk usage of $partitons: $usage \n"
+   message+="High disk usage of $partitons: $usage \n"
 
    #\n - new line 
 
