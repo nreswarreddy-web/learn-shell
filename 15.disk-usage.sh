@@ -11,13 +11,13 @@ do
 
   #if [ "$usage" -ge "$useage_thersold" ]; then
   if [ "$usage" -ge "$usage_threshold" ]; then
-   message+="High disk usage of $partitons: $usage \n"
+   message+="High disk usage of $partitons: $usage <br>"
 
    #\n - new line 
 
   fi
 done  <<< "$disk_usage"
 
-echo -e "$message" 
+# echo -e "$message" 
 
 sh mail.sh "Devops Team" "$server_ip"  "High disk usage" "$message" "nreswarreddy@gmail.com" "WARNNING: High disk usage alrert"
