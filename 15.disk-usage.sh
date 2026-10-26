@@ -1,7 +1,7 @@
 #!/bin/bash
 
 disk_usage=$( df -hT | grep -v Filesystem )
-useage_thersold=20
+usage_threshold=20
 
 while IFS= read -r line 
 do
@@ -15,4 +15,4 @@ do
    #\n - new line 
 
   fi
-done  <<< $"disk_usage"
+done  <<< "$disk_usage"
