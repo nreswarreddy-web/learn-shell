@@ -18,6 +18,6 @@ do
   fi
 done  <<< "$disk_usage"
 
-echo -e "$message"
+echo -e "$message" 
 
-sh mail.sh "Devops Team" "$server_ip"  "High disk usage" "$messgae" "nreswarreddy@gmail.com" "WARNNING: High disk usage alrert"
+sh mail.sh "Devops Team" "$server_ip"  "High disk usage" "$message" "nreswarreddy@gmail.com" "WARNNING: High disk usage alrert"
